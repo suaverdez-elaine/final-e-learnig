@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic E-Learning Skills</title>
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="shortcut icon" href="img/super-sentidos-4.jpg">
+  <script src="js/vendor/modernizr.js"></script>
+
+  <style type="text/css">
+  body {
+    font-size: 100%;
+  }
+  body {
+   
+    background: #71ac76;
+    color: #f4efef;
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    position: relative;
+    cursor: default; 
+  }
+  </style>
+  </head>
+<body>
+  <a name="top"></a>
+</br>
+<!--Title Bar starts here -->
+<div class="row">
+  <div class="large-12 columns medium-12 columns small-12 columns">
+    <img align="center" src="img/3newtitle2.png">
+  </div>
+</div>
+<!--Title bar ends here -->
+<!--Navigation bar starts here -->
+<div class="row">
+    <a href="index1.html"   class="button  large-2 columns">Home</a>
+    <a href="alphabet.html" class="button1 large-2 columns">Alphabets</a>
+    <a href="color.html"    class="button2 large-2 columns">Colors</a>
+    <a href="number.html"   class="button3 large-2 columns">Numbers</a>
+    <a href="rhymes.html"   class="button4 large-2 columns">Ryhmes</a>
+    <a href="developers.html"   class="button5 large-2 columns">Developers</a>
+</div>
+<!--Navigation bar ends here -->
+<div class="row">
+  <ul class="pricing-table">
+  <script src="js/color.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      for(var i in colorArray){
+        var desc = "description";
+        var size = "large-4";
+        var smallSize = "small-12";
+        var col ="columns"; 
+        i = parseInt(i);
+        var idName = colorArray[i].name
+        document.write("<li class='"+desc+" "+size+" "+smallSize+" "+col+"''><a href='#'><img id='"+idName+"' src='"+colorArray[i].imageLink+"' onClick='clickColor(this)'/></a></li>");
+        
+        if((1+i)%4==0){
+          console.log(1+i);
+          
+        }
+      }
+      function clickColor(_obj){
+        var color;
+        for(var i in colorArray){
+          if(colorArray[i].name === _obj.id){
+            color = colorArray[i].color;
+            colorArray[i].setMood("name");
+          }else{
+            
+            colorArray[i].setMood("color");
+          }
+          colorArray[i].updateImage();
+          document.getElementById(colorArray[i].name).setAttribute("src",colorArray[i].imageLink);
+        }
+        if(color == undefined)
+          color = "white";
+          document.body.style.backgroundColor = color;
+      }
+      
+      
+    </script>
+</div>
+</br>
+<div class="row">
+  <a href="#top"   class="button2  large-12 columns expand">Back to Top ^</a>
+</div>
+</br>
+
+<hr>
+  <!--footer starts here -->
+<div class="row">
+  <div class="large-6 columns">
+    <img align="center" src="img/footer.png">
+  </div>
+</div>
+<!--footer ends here -->
+
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+</body>
+</html>
