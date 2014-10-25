@@ -1,0 +1,74 @@
+/*        .galle
+        {
+        width:50px;
+        height:150px;
+        background:red;
+        -webkit-transition:width .8s; /* For Safari 3.1 to 6.0 
+        transition:width .8s;
+        }
+
+        .galle:hover
+        {
+        width:200px;
+        }
+*/
+        .effect
+          {
+            width:8%;
+            height:8%;
+            -webkit-transition:width .1s linear .0001s; /* For Safari 3.1 to 6.0 */
+            transition:width .1s linear .0001s;
+            }
+        .effect:hover  {
+            width:15%;
+            }
+        
+        .galle
+          {
+            width:25%;
+            height:25%;
+            -webkit-transition:width .1s linear .0001s; /* For Safari 3.1 to 6.0 */
+            transition:width .1s linear .0001s;
+            }
+        .galle:hover  {
+            width:28%;
+            }
+            
+        .navigation{
+            font-size: 20px;
+            color: #666666;
+            } 
+        .navigation:hover{
+            border-bottom: white;
+            color: white;
+            }       
+        .unactive{
+            background-color:#232323;
+            padding:10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 21px;
+            color: white;
+        }
+        .unactive:hover{
+            background-color:white;
+            font-size: 21px;
+            color: black;
+        }
+        .active{
+            background-color:white;
+            padding:10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 21px;
+            color: black;
+        }
+        .active:hover{
+            background-color:#595454;
+            font-size: 21px;
+            color: white;
+        }
+        .font{
+            color:#7f7f7f;
+            font-size:30px;
+        }
